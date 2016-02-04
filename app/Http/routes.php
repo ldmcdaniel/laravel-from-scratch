@@ -11,14 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    $people = ['Lucas', 'Jill', 'Avery', 'Coen', 'Keaton'];
-    return view('welcome', compact('people'));
-});
+Route::get('about', 'PagesController@about');
 
-Route::get('about', function () {
-    return view('pages.about');
-});
+Route::get('/', 'PagesController@home');
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +26,6 @@ Route::get('about', function () {
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
+//Route::group(['middleware' => ['web']], function () {
     //
-});
+//});
