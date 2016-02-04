@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>About Laravel</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -36,14 +36,10 @@
         </style>
     </head>
     <body>
-        @if (empty($people))
-            There are no people.
-        @endif
-        @else
-            Something else here.
-        @endelse
-        @foreach ($people as $person)
-            <li>{{ $person }}</li>
-        @endforeach
+        <div class="container">
+            <div class="content">
+                <div class="title">About Page created by Lucas</div>
+            </div>
+        </div>
     </body>
 </html>
